@@ -36,7 +36,7 @@ graph TD
 
 - Python 3.13 or higher
 - Cerebras API key
-- pip or uv package manager
+- uv package manager (recommended)
 
 ### Quick Start
 
@@ -48,7 +48,7 @@ graph TD
 
 2. **Install dependencies**
    ```bash
-   pip install -e .
+   uv sync
    ```
 
 3. **Set up environment variables**
@@ -141,7 +141,7 @@ The server exposes the following tools via MCP:
 # Clone and install in development mode
 git clone https://github.com/your-username/cerebras-mcp-server-github.git
 cd cerebras-mcp-server-github
-pip install -e ".[dev]"
+uv sync --all-extras
 
 # Install pre-commit hooks
 pre-commit install
